@@ -39,12 +39,12 @@ setuptools_kwargs = {
     "install_requires": [
         "python-dateutil >= 2.6.1",
         "pytz >= 2017.2",
-        f"numpy >= {min_numpy_ver}",
+        #f"numpy >= {min_numpy_ver}",
+        "numpy @ git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy",
     ],
     "setup_requires": [f"numpy >= {min_numpy_ver}"],
     "zip_safe": False,
 }
-
 
 try:
     import Cython
