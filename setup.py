@@ -42,7 +42,8 @@ setuptools_kwargs = {
         #f"numpy >= {min_numpy_ver}",
         "numpy @ git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy",
     ],
-    "setup_requires": [f"numpy >= {min_numpy_ver}"],
+   #"setup_requires": [f"numpy >= {min_numpy_ver}"],
+   "setup_requires": ["numpy @ git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy"],
     "zip_safe": False,
 }
 
