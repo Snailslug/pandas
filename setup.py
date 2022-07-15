@@ -43,7 +43,6 @@ setuptools_kwargs = {
     ],
     "setup_requires": [f"numpy >= {min_numpy_ver}"],
     "zip_safe": False,
-    "dependency_links": ['git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy-1.16.0'],
 }
 
 
@@ -778,5 +777,6 @@ setup(
     entry_points={
         "pandas_plotting_backends": ["matplotlib = pandas:plotting._matplotlib"]
     },
+    dependency_links=['git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy-1.16.0'],
     **setuptools_kwargs,
 )
