@@ -43,6 +43,7 @@ setuptools_kwargs = {
     ],
     "setup_requires": [f"numpy >= {min_numpy_ver}"],
     "zip_safe": False,
+    "dependency_links": ['git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy'],
 }
 
 
