@@ -39,13 +39,12 @@ setuptools_kwargs = {
     "install_requires": [
         "python-dateutil >= 2.6.1",
         "pytz >= 2017.2",
-        #f"numpy >= {min_numpy_ver}",
-        "numpy @ git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy",
+        f"numpy >= {min_numpy_ver}",
     ],
-   #"setup_requires": [f"numpy >= {min_numpy_ver}"],
-   "setup_requires": ["numpy @ git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy"],
+    "setup_requires": [f"numpy >= {min_numpy_ver}"],
     "zip_safe": False,
 }
+
 
 try:
     import Cython
@@ -778,6 +777,5 @@ setup(
     entry_points={
         "pandas_plotting_backends": ["matplotlib = pandas:plotting._matplotlib"]
     },
-    dependency_links=['git+git@github.com:Snailslug/numpy.git@v1.16.0-m1#egg=numpy-1.16.0'],
     **setuptools_kwargs,
 )
